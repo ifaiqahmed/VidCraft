@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans as FontSans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/home/Header";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -22,7 +23,8 @@ export default function RootLayout({
       <body
         className={fontSans.className}
       >
-        {children}
+        <Header></Header>
+        <main>  {children}</main>
       </body>
     </html>
   );
