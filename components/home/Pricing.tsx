@@ -4,7 +4,6 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { plansMap } from "@/lib/assets";
 
-
 export default function Pricing() {
   return (
     <section className="relative overflow-hidden" id="pricing">
