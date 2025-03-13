@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
                 console.log({ session });
 
                 //connect to database aor update the user
-                await handleCheckoutSessionCompleted({session,stripe});
+                await handleCheckoutSessionCompleted({ session, stripe });
                 break
             }
 
